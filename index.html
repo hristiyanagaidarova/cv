@@ -51,9 +51,18 @@
             padding-left: 25px;
         }
 
+        /* CSS клас за скриване на елементи на екрана (в уеб версията) */
+        .hide-on-screen {
+            display: none !important;
+        }
+
         @media print {
             body { background: white; }
             .print-shadow { box-shadow: none; border: none; }
+            
+            /* Показваме обратно бутона, когато печатаме (в PDF версията) */
+            .hide-on-screen { display: flex !important; }
+            
             .no-print { display: none !important; }
             #ai-chat-widget { display: none !important; }
         }
@@ -100,10 +109,11 @@
                         <div class="flex items-center gap-2 bg-black/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
                             <i class="fab fa-linkedin text-violet-300"></i> linkedin.com/in/hristiyanagaidarova
                         </div>
-                        <!-- Highlighted Interactive CV Link -->
-                        <div class="flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white px-4 py-1.5 rounded-lg shadow-lg shadow-fuchsia-500/40 font-bold border border-fuchsia-400/50 transform hover:scale-105 transition-transform cursor-pointer">
-                            <i class="fas fa-globe-europe text-white"></i> hristiyanagaidarova.github.io/cv
-                        </div>
+                        
+                        <!-- Highlighted Interactive CV Link - FIXED, UPDATED, AND SCREEN-HIDDEN -->
+                        <a href="https://hristiyanagaidarova.github.io/cv/" target="_blank" class="hide-on-screen flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white px-4 py-1.5 rounded-lg shadow-lg shadow-fuchsia-500/40 font-bold border border-fuchsia-400/50 transform hover:scale-105 transition-transform cursor-pointer decoration-none">
+                            <i class="fas fa-globe-europe text-white"></i> View My CV Online
+                        </a>
                     </div>
                 </div>
             </div>
