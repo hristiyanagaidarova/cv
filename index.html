@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Hristiyana Gaidarova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f3f4f6;
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+            /* Форсира браузъра да принтира цветовете 1:1 за PDF */
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .print-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Timeline styling */
+        .timeline-dot {
+            position: absolute;
+            left: -33px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #8b5cf6;
+            background-color: #8b5cf6;
+        }
+        
+        .timeline-line {
+            border-left: 2px solid #ddd6fe;
+            margin-left: 35px;
+            padding-left: 25px;
+        }
+
+        @media print {
+            body { background: white; }
+            .print-shadow { box-shadow: none; border: none; }
+            .no-print { display: none !important; }
+            #ai-chat-widget { display: none !important; }
+        }
+    </style>
+</head>
+<body class="py-12 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-5xl mx-auto glass-panel print-shadow rounded-3xl overflow-hidden border border-white/50">
+        
+        <!-- HEADER SECTION -->
+        <div class="bg-gradient-to-br from-violet-900 via-indigo-800 to-blue-900 px-10 py-14 relative overflow-hidden text-white">
+            <!-- Decorative abstract shapes -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3 no-print"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-400 opacity-10 rounded-full blur-2xl transform -translate-x-1/2 translate-y-1/2 no-print"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-8">
+                
+                <!-- Creative Photo -->
+                <div class="shrink-0 group perspective-1000">
+                    <div class="w-44 h-44 rounded-2xl border-4 border-white/20 shadow-2xl overflow-hidden transform rotate-3 transition-all duration-500 hover:rotate-0 hover:scale-105 hover:border-white/40">
+                        <img src="photo.png" alt="Hristiyana Gaidarova" class="w-full h-full object-cover" onerror="this.style.display='none';">
+                    </div>
+                </div>
+
+                <!-- Name & Info -->
+                <div class="text-center md:text-left flex-grow">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight mb-2 text-white drop-shadow-md">
+                        Hristiyana <span class="text-violet-300">Gaidarova</span>
+                    </h1>
+                    <h2 class="text-2xl font-semibold text-indigo-200 mb-6 uppercase tracking-wider text-sm">
+                        Team Leader & Project Manager
+                    </h2>
+                    
+                    <div class="flex flex-wrap justify-center md:justify-start gap-y-3 gap-x-6 text-sm font-medium text-indigo-100">
+                        <div class="flex items-center gap-2 bg-black/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fas fa-map-marker-alt text-violet-300"></i> Burgas, Bulgaria
+                        </div>
+                        <div class="flex items-center gap-2 bg-black/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fas fa-phone text-violet-300"></i> +359 888460520
+                        </div>
+                        <div class="flex items-center gap-2 bg-black/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fas fa-envelope text-violet-300"></i> hristiyana.gaidarova@gmail.com
+                        </div>
+                        <div class="flex items-center gap-2 bg-black/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fab fa-linkedin text-violet-300"></i> linkedin.com/in/hristiyanagaidarova
+                        </div>
+                        <!-- Highlighted Interactive CV Link -->
+                        <div class="flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white px-4 py-1.5 rounded-lg shadow-lg shadow-fuchsia-500/40 font-bold border border-fuchsia-400/50 transform hover:scale-105 transition-transform cursor-pointer">
+                            <i class="fas fa-globe-europe text-white"></i> hristiyanagaidarova.github.io
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT (Split Layout) -->
+        <div class="flex flex-col md:flex-row bg-white">
+            
+            <!-- Left Column: Main Info (About, Experience, Education, Goals) -->
+            <div class="w-full md:w-2/3 p-8 sm:p-10">
+                
+                <!-- About me -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-fuchsia-50 text-fuchsia-500 flex items-center justify-center shadow-sm">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C8 2 5 5 5 9.5C5 11.9 6 14 7.5 15.5V18C7.5 19.1 8.4 20 9.5 20H14.5C15.6 20 16.5 19.1 16.5 18V15.5C18 14 19 11.9 19 9.5C19 5 16 2 12 2ZM12 14C10 14 8 12 8 9.5C8 7 10 5 12 5C14 5 16 7 16 9.5C16 12 14 14 12 14Z" />
+                                <path d="M12 18.5C7 18.5 3 20.5 3 24H21C21 20.5 17 18.5 12 18.5Z" />
+                            </svg>
+                        </div>
+                        About me
+                    </h3>
+                    <div class="bg-white border border-gray-100 shadow-sm p-6 sm:p-8 rounded-2xl hover:shadow-md transition-shadow">
+                        <p class="text-gray-600 leading-relaxed text-sm text-justify font-medium">
+                            A dedicated professional with experience in team leadership. My focus is on project management, coordinating teams, and supporting production workflows. I am a loyal and responsible team member who values clear communication and working collaboratively to meet deadlines. I draw on my technical background to assist with project estimations and help different departments work smoothly together.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Wavy Divider 1 -->
+                <div class="w-full h-4 mb-8 opacity-20" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='16' viewBox='0 0 40 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 10 2, 20 8 T 40 8' stroke='%238b5cf6' stroke-width='2' fill='none'/%3E%3C/svg%3E&quot;); background-repeat: repeat-x;"></div>
+
+                <!-- Experience Section -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center shadow-sm">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        Professional Experience
+                    </h3>
+
+                    <!-- Wrapped Experience in the pale rectangle -->
+                    <div class="bg-white border border-gray-100 shadow-sm p-6 sm:p-8 rounded-2xl hover:shadow-md transition-shadow">
+                        <div class="timeline-line mt-2">
+                            
+                            <!-- PixelPool Supervisor -->
+                            <div class="relative mb-10 group">
+                                <div class="timeline-dot group-hover:scale-125 transition-transform duration-300"></div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                    <h4 class="text-xl font-bold text-gray-800 font-heading">Production Supervisor & Team Leader</h4>
+                                    <span class="bg-violet-50 text-violet-700 px-3 py-1 rounded-full text-xs font-bold border border-violet-100 mt-2 sm:mt-0 whitespace-nowrap">Aug 2019 - Apr 2026</span>
+                                </div>
+                                <div class="text-md font-semibold text-violet-600 mb-3">PixelPool (Remote / Bulgaria)</div>
+                                <p class="text-gray-600 text-sm leading-relaxed text-justify bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                    Working in close partnership with the Project Manager, I directed the operational workflow and bridged high-level project objectives with daily production. My leadership scope evolved from directly managing a core team of five to successfully supervising three distinct production teams. In this expanded capacity, I guided and coordinated directly with three Team Leads to strategically distribute workloads, optimize resource allocation, and drive cross-functional efficiency. Furthermore, I was responsible for overseeing comprehensive Quality Assurance (QA) processes across all departments, ensuring that final deliverables consistently met the highest quality standards and strict project timelines.
+                                </p>
+                            </div>
+
+                            <!-- Team Lead -->
+                            <div class="relative mb-10 group">
+                                <div class="timeline-dot bg-indigo-400 border-indigo-400 box-shadow-none group-hover:scale-125 transition-transform duration-300" style="box-shadow: 0 0 0 2px #818cf8;"></div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                    <h4 class="text-lg font-bold text-gray-800 font-heading">Team Lead</h4>
+                                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold border border-gray-200 mt-2 sm:mt-0 whitespace-nowrap">Jun 2019 - Jul 2019</span>
+                                </div>
+                                <div class="text-sm font-semibold text-gray-500 mb-2">PixelPool</div>
+                                <p class="text-gray-600 text-sm leading-relaxed text-justify">
+                                    Led and supported a core team of five members. Responsibilities included effectively distributing daily workloads, fostering a positive team environment, and ensuring the high quality of all products delivered by the entire team.
+                                </p>
+                            </div>
+
+                            <!-- 3D Artist -->
+                            <div class="relative mb-10 group">
+                                <div class="timeline-dot bg-indigo-400 border-indigo-400 box-shadow-none group-hover:scale-125 transition-transform duration-300" style="box-shadow: 0 0 0 2px #818cf8;"></div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                    <h4 class="text-lg font-bold text-gray-800 font-heading">3D Artist</h4>
+                                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold border border-gray-200 mt-2 sm:mt-0 whitespace-nowrap">Oct 2015 - Jun 2019</span>
+                                </div>
+                                <div class="text-sm font-semibold text-gray-500 mb-2">PixelPool</div>
+                                <p class="text-gray-600 text-sm leading-relaxed text-justify">
+                                    Created high-quality 3D models utilizing advanced techniques in modeling, cloth simulation, digital pattern making, and texturing. Proficient in industry-standard software including Marvelous Designer, Clo3D, 3ds Max, and Adobe Photoshop.
+                                </p>
+                            </div>
+
+                            <!-- Wild Art -->
+                            <div class="relative mb-10 group">
+                                <div class="timeline-dot bg-gray-300 border-gray-300 box-shadow-none group-hover:scale-125 transition-transform duration-300" style="box-shadow: 0 0 0 2px #d1d5db;"></div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                    <h4 class="text-md font-bold text-gray-800 font-heading">Graphic Designer</h4>
+                                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold border border-gray-200 mt-2 sm:mt-0 whitespace-nowrap">May 2014 - Jan 2015</span>
+                                </div>
+                                <div class="text-sm font-semibold text-gray-500 mb-1">Wild Art Ltd</div>
+                                <p class="text-gray-600 text-sm">Team collaboration and direct communication with clients to clarify project requirements.</p>
+                            </div>
+
+                            <!-- Internship -->
+                            <div class="relative group">
+                                <div class="timeline-dot bg-gray-300 border-gray-300 box-shadow-none group-hover:scale-125 transition-transform duration-300" style="box-shadow: 0 0 0 2px #d1d5db;"></div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                    <h4 class="text-md font-bold text-gray-800 font-heading">Graphic Design Intern</h4>
+                                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold border border-gray-200 mt-2 sm:mt-0 whitespace-nowrap">Dec 2013 - Mar 2014</span>
+                                </div>
+                                <div class="text-sm font-semibold text-gray-500 mb-1">First Online Solutions</div>
+                                <p class="text-gray-600 text-sm">Created various digital and print assets including logos, certificates, banners, and social media graphics using Adobe Photoshop and Adobe Illustrator.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center shadow-sm">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        Education
+                    </h3>
+                    
+                    <!-- Wrapped Education in the pale rectangle -->
+                    <div class="bg-white border border-gray-100 shadow-sm p-6 sm:p-8 rounded-2xl hover:shadow-md transition-shadow">
+                        <div class="grid grid-cols-1 gap-5">
+                            <div class="bg-gray-50/70 border border-gray-100 p-5 rounded-xl">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                    <h4 class="text-md font-bold text-gray-800 font-heading">Bachelor's Degree in Design Engineering</h4>
+                                    <span class="text-xs font-bold text-gray-500 bg-gray-200/50 px-2 py-1 rounded mt-2 sm:mt-0 whitespace-nowrap">2011 - 2015</span>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-1">Foundational knowledge in theory of perception, marketing, advertising, and design thinking, highly beneficial for understanding the complete product lifecycle.</p>
+                            </div>
+
+                            <div class="bg-gray-50/70 border border-gray-100 p-5 rounded-xl">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                    <h4 class="text-md font-bold text-gray-800 font-heading">High School of Mathematics "Atanas Radev"</h4>
+                                    <span class="text-xs font-bold text-gray-500 bg-gray-200/50 px-2 py-1 rounded mt-2 sm:mt-0 whitespace-nowrap">2006 - 2011</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Profile: Mathematics and Informatics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wavy Divider 2 -->
+                <div class="w-full h-4 mb-8 opacity-20" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='16' viewBox='0 0 40 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8 Q 10 2, 20 8 T 40 8' stroke='%238b5cf6' stroke-width='2' fill='none'/%3E%3C/svg%3E&quot;); background-repeat: repeat-x;"></div>
+
+                <!-- Vision & Goals -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-teal-400 text-white flex items-center justify-center shadow-md">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        Vision & Goals
+                    </h3>
+                    
+                    <div class="bg-white border border-gray-100 shadow-sm p-6 sm:p-8 rounded-2xl hover:shadow-md transition-shadow relative overflow-hidden">
+                        <div class="absolute -right-4 -bottom-4 opacity-5">
+                            <i class="fas fa-bullseye text-8xl text-teal-900"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed text-justify relative z-10 font-medium">
+                            As a loyal and dedicated professional, I am looking for a stable and transparent company that values long-term partnerships. I am highly adaptable and completely open to exploring new industries and expanding my skill set. Continuous learning is very important to me, and I am eager to undergo new training to bring maximum value. Ultimately, I seek a secure environment that offers room for professional growth and mutual respect.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Sidebar (Skills, Software, Languages) -->
+            <div class="w-full md:w-1/3 bg-gray-50/50 p-10 border-l border-gray-100">
+                
+                <!-- Skills (Tags layout) -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 font-heading border-b-2 border-violet-200 pb-2 inline-block">Expertise</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Team Management</span>
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Project Management</span>
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Process Optimization</span>
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Quality Assurance</span>
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Resource Estimation</span>
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Client Communication</span>
+                        <span class="bg-white text-gray-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-gray-200 hover:border-violet-300 transition-colors">Problem Solving</span>
+                    </div>
+                </div>
+
+                <!-- Software -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 font-heading border-b-2 border-violet-200 pb-2 inline-block">Software</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-blue-100">Adobe Photoshop</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-blue-100">Adobe Illustrator</span>
+                        <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-indigo-100">3D Studio Max</span>
+                        <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-indigo-100">Marvelous Designer</span>
+                        <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg text-sm font-semibold shadow-sm border border-indigo-100">Clo3D</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 font-heading border-b-2 border-violet-200 pb-2 inline-block">Languages</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between bg-white p-2.5 rounded-lg shadow-sm border border-gray-100">
+                            <span class="font-medium text-gray-700 text-sm">Bulgarian</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-xs font-bold">Native</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-2.5 rounded-lg shadow-sm border border-gray-100">
+                            <span class="font-medium text-gray-700 text-sm">English</span>
+                            <span class="bg-violet-100 text-violet-700 px-2 py-0.5 rounded text-xs font-bold">B2</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-2.5 rounded-lg shadow-sm border border-gray-100">
+                            <span class="font-medium text-gray-700 text-sm">Spanish</span>
+                            <span class="bg-violet-100 text-violet-700 px-2 py-0.5 rounded text-xs font-bold">B1</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Widget -->
+    <div id="ai-chat-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end no-print">
+        <!-- Chat Window -->
+        <div id="chat-window" class="hidden bg-white w-80 rounded-2xl shadow-2xl overflow-hidden mb-4 border border-violet-100">
+            <div class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-4 flex justify-between items-center">
+                <span class="font-bold text-sm flex items-center font-heading tracking-wide"><i class="fas fa-robot mr-2 text-violet-200"></i> AI Assistant</span>
+                <button onclick="toggleChat()" class="text-white/80 hover:text-white transition-colors"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chat-messages" class="h-64 p-4 overflow-y-auto bg-gray-50 flex flex-col gap-3 text-sm">
+                <div class="bg-white border border-gray-100 text-gray-800 p-3 rounded-2xl rounded-tl-sm mr-auto max-w-[85%] shadow-sm">
+                    Hello! I am Hristiyana's virtual assistant. Do you have any questions regarding her professional experience, skills, or future goals?
+                </div>
+            </div>
+            <div class="p-3 bg-white border-t border-gray-100 flex gap-2">
+                <input type="text" id="chat-input" class="flex-grow bg-gray-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all" placeholder="Ask a question..." onkeypress="if(event.key === 'Enter') sendChatMessage()">
+                <button onclick="sendChatMessage()" class="bg-violet-600 hover:bg-violet-700 text-white w-10 h-10 rounded-xl transition-colors flex items-center justify-center shrink-0 shadow-md shadow-violet-200">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Chat Toggle Button -->
+        <button onclick="toggleChat()" class="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white rounded-2xl w-14 h-14 flex items-center justify-center shadow-lg shadow-violet-200 transition-all hover:scale-105 hover:-translate-y-1">
+            <i class="fas fa-sparkles text-xl"></i>
+        </button>
+    </div>
+
+    <script>
+        const apiKey = "";
+        const systemPrompt = `You are a virtual assistant representing Hristiyana Gaidarova.
+        Information about her:
+        - Profile: Team Leader / Project Manager. Dedicated, loyal, and responsible professional.
+        - Experience: Proven track record in leadership positions including Production Supervisor and Team Lead (PixelPool). Previously 3D Artist and Graphic Designer.
+        - Skills: Team Management, Project Management (PM), Process Organization, Quality Assurance (QA), Resource and Time Estimation, Client Communication, Problem Solving.
+        - Software: Adobe Photoshop, Adobe Illustrator, 3D Studio Max, Marvelous Designer, Clo3D.
+        - Languages: English (B2), Spanish (B1), Bulgarian (Native).
+        - Location: Burgas, Bulgaria.
+        - Goals: Looking for a stable, transparent company for a long-term partnership. Open to new industries and training. Seeks a secure environment with mutual respect.
+        Answer briefly, professionally, and politely in English, based only on this CV.`;
+
+        async function fetchWithRetry(url, options, maxRetries = 5) {
+            let retries = 0;
+            const delays = [1000, 2000, 4000, 8000, 16000];
+            while (retries < maxRetries) {
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return await response.json();
+                } catch (error) {
+                    retries++;
+                    if (retries >= maxRetries) throw error;
+                    await new Promise(r => setTimeout(r, delays[retries - 1]));
+                }
+            }
+        }
+
+        async function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            input.value = '';
+            addMessageToChat('user', message);
+            
+            const loadingId = addMessageToChat('ai', 'Typing...');
+
+            try {
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+                const payload = {
+                    contents: [{ parts: [{ text: message }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                };
+
+                const data = await fetchWithRetry(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, an unexpected error occurred.";
+                updateMessageInChat(loadingId, text);
+            } catch (error) {
+                updateMessageInChat(loadingId, "Couldn't connect to the network. Please try again later.");
+            }
+        }
+
+        function addMessageToChat(sender, text) {
+            const chatBox = document.getElementById('chat-messages');
+            const msgDiv = document.createElement('div');
+            const id = 'msg-' + Date.now();
+            msgDiv.id = id;
+            
+            if (sender === 'user') {
+                msgDiv.className = `p-3 rounded-2xl rounded-tr-sm text-sm max-w-[85%] shadow-sm bg-violet-100 text-violet-900 ml-auto`;
+            } else {
+                msgDiv.className = `p-3 rounded-2xl rounded-tl-sm text-sm max-w-[85%] shadow-sm bg-white border border-gray-100 text-gray-800 mr-auto`;
+            }
+            
+            msgDiv.textContent = text;
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return id;
+        }
+
+        function updateMessageInChat(id, text) {
+            const msgDiv = document.getElementById(id);
+            if (msgDiv) {
+                msgDiv.textContent = text;
+            }
+        }
+
+        function toggleChat() {
+            const chatWindow = document.getElementById('chat-window');
+            chatWindow.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
